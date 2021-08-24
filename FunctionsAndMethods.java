@@ -4,8 +4,15 @@ import java.util.Scanner;
 
 public class FunctionsAndMethods {
     public static void main(String[] args) {
-       int ans = sumWithParams(10,32);
-        System.out.println(ans);
+        Scanner in = new Scanner(System.in);
+        String name = in.next();
+        String custom = myString(name);
+        System.out.println(custom);
+    }
+
+    static String myString(String name) {
+        String message = "Hello" +" "+ name;
+        return message;
     }
 
     static int sumWithReturn(){
